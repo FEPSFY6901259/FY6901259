@@ -165,10 +165,14 @@ Table 1: Data on cost and lifespan of bridge repairs
        
 
 <p id="date&time"></p>
+       
        <script>
+         
          //Javascript to display the date and time on my webpage
+         
          const d = new Date();
          document.getElementById("date&time").innerHTML = d;
+         
        </script>
 
 
@@ -180,7 +184,7 @@ Table 1: Data on cost and lifespan of bridge repairs
            <title> Change Button Colour</title>
           </head>
          <body>
-           <utton id ="colorButton">Click me to change colour</button>
+           <button id ="colorButton">Click me to change colour</button>
          </body>
          <script>
            //Get a reference to the button element 
@@ -188,19 +192,19 @@ Table 1: Data on cost and lifespan of bridge repairs
 
            //Function to change the button color
            function changeColor() {
+             //Generatre  a random (hexidecimal)
              var randomColor = "#" + Math.floor(Math.random()*16777215).toString(16);
 
-             //et the button's background color to the random color 
+             //Set the button's background color to the random color 
              button.style.backgroundColor = randomColor;
            }
 
            //Add a click event listener to the button 
-           button.addEventListner("click",changeColor);
+           button.addEventListener("click",changeColor);
          </script>
      </body>
     </html>
-             
-         </script>
+            
 
         
 

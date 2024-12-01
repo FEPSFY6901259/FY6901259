@@ -130,13 +130,13 @@ tr:nth-child(even) {
 <!-- //////////////////////////////////////////////////////////////////////////////// -->
 
 <h3 id="Abstract">Abstract</h3>
-<pre id="Abstract">
+<p id="Abstract">
 <br>The overview for this article is an insight of what goes into developing an aircraft, such as the
 <br>conceptual layout of aircraft’s which relies on computational simulations. Comparing different 
 <br>models and searching for advantages or disadvantages of using a certain model in contrast to 
 <br>another model. The main types stress how the aircraft goes through the air and how the wing 
 <br>structure of a plane effects its aerodynamics, are discussed.
-</pre>
+</p>
 
 
 <!-- //////////////////////////////////////////////////////////////////////////////// -->
@@ -461,7 +461,7 @@ develop around fastener holes”. (Gudmundsson, S., 2014).</br>
     const AbstractCount = displayWordCount("Abstract");
     const Flight_of_an_AircraftCount = displayWordCount("Flight_of_an_Aircraft");
     // Calculate the sum of all selected sections
-    const totalWordCount = Abstract + Flight_of_an_Aircraft;
+    const totalWordCount = AbstractCount + Flight_of_an_AircraftCount;
     // Display the total word count
     document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
   }

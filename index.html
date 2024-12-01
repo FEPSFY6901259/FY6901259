@@ -473,7 +473,7 @@ develop around fastener holes”. (Gudmundsson, S., 2014).</br>
    const AbstractCount = displayWordCount("Abstract_InText");
    const ReferencesCount = displayWordCount("References_InText");
     // Calculate the sum of all selected sections
-    const totalWordCount =  + FlightCount + StressCount + SimulationsCount + ConceptualCount + ComparisonCount;
+    const totalWordCount =  FlightCount + StressCount + SimulationsCount + ConceptualCount + ComparisonCount + AbstractCount + ReferencesCount ;
     // Display the total word count
     document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
   }

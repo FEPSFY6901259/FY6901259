@@ -130,12 +130,13 @@ tr:nth-child(even) {
 <!-- //////////////////////////////////////////////////////////////////////////////// -->
 
 <h3 id="Abstract">Abstract</h3>
-<pre id="Abstract_InText">
-The overview for this article is an insight of what goes into developing an aircraft, such as the
-conceptual layout of aircraft’s which relies on computational simulations. Comparing different 
-models and searching for advantages or disadvantages of using a certain model in contrast to 
-another model. The main types stress how the aircraft goes through the air and how the wing 
-structure of a plane effects its aerodynamics, are discussed.</pre>
+
+<br>The overview for this article is an insight of what goes into developing an aircraft, such as the
+<br>conceptual layout of aircraft’s which relies on computational simulations. Comparing different 
+<br>models and searching for advantages or disadvantages of using a certain model in contrast to 
+<br>another model. The main types stress how the aircraft goes through the air and how the wing 
+<br>structure of a plane effects its aerodynamics, are discussed.
+
 
 
 <!-- //////////////////////////////////////////////////////////////////////////////// -->
@@ -147,7 +148,8 @@ structure of a plane effects its aerodynamics, are discussed.</pre>
 <p id="Flight_InText">
 <br>When the aircraft is accelerating, there is a difference in air pressure, at the surfaces of the wings. The top section of
 the wing experiences a low pressure, than the bottom section of the 
-wing which creates a net upwards force, causing the aircraft to fly. (Robert, 2021) </br><p>
+wing which creates a net upwards force, causing the aircraft to fly. (Robert, 2021) </br>
+<p>
 
  
 <!-- //////////////////////////////////////////////////////////////////////////////// -->
@@ -155,7 +157,7 @@ wing which creates a net upwards force, causing the aircraft to fly. (Robert, 20
 <!-- //////////////////////////////////////////////////////////////////////////////// -->
 
 <h3 id="Stress Examination on Aircraft">Stress Examination on Aircraft</h3>
-       
+<p id="Stress_InText">      
 <br>When an aircraft is in flight, “the primary objective of stress analysis is to insure that each 
 structural member of the airframe is properly designed and sized to meet structural 
 requirements with the lowest possible weight.” 
@@ -181,6 +183,7 @@ waste resources, energy, and time on an aircraft that does not do the job.
 
 <br>#</br>
 <br>Figure 1: Basic types of stress and loads. Taken from (Nicolai, L. M. (Leland M. et al., 2010)</br>
+<p>
 
 
 <!-- //////////////////////////////////////////////////////////////////////////////// -->
@@ -188,7 +191,7 @@ waste resources, energy, and time on an aircraft that does not do the job.
 <!-- //////////////////////////////////////////////////////////////////////////////// -->
  
 <h3 id="Simulations of Conceptual Designs of Fighter Aircraft">Simulations of Conceptual Designs of Fighter Aircraft</h3>
-
+<p id="Simulations_InText">
 <br>Traditionally, scaled down models were produced and used to test the aircraft design however
 this is very time consuming therefore the solution is to use computational models such as
 computational fluid dynamics (CFD) which can be extremely useful by taking “a scaled down 
@@ -218,13 +221,14 @@ formation of strong shock wave and consequent drag rise in transonic flight.”
 <br>#</br>
 
 <br>Figure 3: The longitudinal area dispersion for approximation to minimise wave drag. Taken from (Siddiqui, W. et al., 2021)</br>
+<p>
 
 <!-- //////////////////////////////////////////////////////////////////////////////// -->
 <!-- ///////////////// Conceptual Formation of a Wing Structure  //////////////////// -->
 <!-- //////////////////////////////////////////////////////////////////////////////// --> 
 
 <h3 id="Conceptual Formation of a Wing Structure">Conceptual Formation of a Wing Structure</h3>
-
+<p id="Conceptual_InText">
 <br>Aircrafts had intriguing concepts of how the wings are placed on the fuselage of a plane. Aircraft 
 manufacturers wanted their planes to have an aerodynamic shape for the wings to generate 
 speed and lift for their aircraft whilst reducing the drag, so therefore planes would require 
@@ -237,13 +241,14 @@ without ﬂaps.” (Gudmundsson, S., 2014)</br>
 <br>#</br>
  
 <br>Figure 4: Wing configurations. Taken from (Gudmundsson, S., 2014)</br>
+<p>
 
 <!-- ///////////////////////////////////////////////////////////////////////////////// -->
 <!-- ///////////////// Comparison between Canopy or Roofed Cabin  //////////////////// -->
 <!-- ///////////////////////////////////////////////////////////////////////////////// --> 
 
 <h3 id="Comparison between Canopy or Roofed Cabin">Comparison between Canopy or Roofed Cabin</h3> 
-
+<p id="Comparison_InText">
 <br>The roofed cabin advantage is that there is an increased protection from an accidental turn over 
 but requires an entry door to be included for the accessway, however the roofed cabin reduces 
 the field of view for the pilot that can result in an increased chance of a collision mid-air. A 
@@ -255,6 +260,7 @@ develop around fastener holes”. (Gudmundsson, S., 2014).</br>
 <br>#</br>
 
 <br>Figure 5: An aircraft with a canopy or roofed cabin. Taken from (Gudmundsson, S., 2014)</br>
+<p>
   
 <!-- //////////////////////////////////////////////////////////////////////////////// -->
 <!-- ///////////////////////////////// Date and time //////////////////////////////// -->
@@ -457,10 +463,13 @@ develop around fastener holes”. (Gudmundsson, S., 2014).</br>
   // Function to calculate and display total word count from selected sections
   function displayTotalWordCount() {
     // Calculate word count for each section and accumulate the total
-    const AbstractCount = displayWordCount("Abstract_InText");
     const FlightCount = displayWordCount("Flight_InText");
+    const StressCount = displayWordCount("Stress_InText");
+    const SimulationsCount = displayWordCount("Simulations_InText");
+    const ConceptualCount = displayWordCount("Conceptual_InText");
+    const ComparisonCount = displayWordCount("Comparison_InText");
     // Calculate the sum of all selected sections
-    const totalWordCount = AbstractCount + FlightCount;
+    const totalWordCount =  + FlightCount + StressCount + SimulationsCount + ConceptualCount + ComparisonCount;
     // Display the total word count
     document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
   }

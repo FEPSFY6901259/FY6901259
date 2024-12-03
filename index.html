@@ -230,6 +230,15 @@ hinderance to a canopy and “acrylic canopy must be installed and operated with
 <br>Figure 5: An aircraft with a canopy or roofed cabin. Taken from <a href="#References">(Gudmundsson, S., 2014)</a></br>
 </pre>
 
+<!-- ///////////////////////////////////////////////////////////////////////////////// -->
+<!-- ////////////////////////////////// Conclusion  ////////////////////////////////// -->
+<!-- ///////////////////////////////////////////////////////////////////////////////// --> 
+ <pre id="Summary_InText">
+ <h3 id="Summary"><b>Summary</b></h3> 
+ <br>Using computational simulations makes tedious testing and experimenting design and structure for an aircraft 
+ 
+ </br>
+
 <!-- //////////////////////////////////////////////////////////////////////////////// -->
 <!-- ////////////////////////////////// References ////////////////////////////////// -->
 <!-- //////////////////////////////////////////////////////////////////////////////// -->
@@ -326,10 +335,9 @@ hinderance to a canopy and “acrylic canopy must be installed and operated with
     const SimulationsCount = displayWordCount("Simulations_InText");
     const ConceptualCount = displayWordCount("Conceptual_InText");
     const ComparisonCount = displayWordCount("Comparison_InText");
-
-
+    const SummaryCount = displayWordCount("Summary_InText");
     // Calculate the sum of all selected sections
-    const totalWordCount =  FlightCount + StressCount + SimulationsCount + ConceptualCount + ComparisonCount;
+    const totalWordCount =  FlightCount + StressCount + SimulationsCount + ConceptualCount + ComparisonCount + ConclusionCount;
     // Display the total word count
     document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
   }

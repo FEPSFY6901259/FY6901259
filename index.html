@@ -262,6 +262,66 @@ leave in the background and can give engineers and researchers time to focus on 
 <br><a href="https://www.scielo.br/j/jatm/a/5mBwqZFTCG3BFnsr3jjMyMQ/?lang=en">-Siddiqui, W. et al. (2021) Computational Aerodynamics Study of Competing Conceptual Designs for Advanced Tactical Fighter Aircraft. Journal of Aerospace Technology and Management. [Online] 13 (1), 2221–2221.</a></br>
 
 <!-- //////////////////////////////////////////////////////////////////////////////// -->
+<!-- //////////////////////////////// Scroll up button ////////////////////////////// -->
+<!-- //////////////////////////////////////////////////////////////////////////////// -->
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: grey;
+  color: white;
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  padding: 15px;
+  border-radius: 20px;
+}
+
+</style>
+</head>
+<body>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
+
+<script>
+
+let mybutton = document.getElementById("myBtn");
+
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+</body>
+
+
+ 
+<!-- //////////////////////////////////////////////////////////////////////////////// -->
 <!-- ////////////////////////////// Adding last update ////////////////////////////// -->
 <!-- //////////////////////////////////////////////////////////////////////////////// -->
     <!-- Last commit time display -->
